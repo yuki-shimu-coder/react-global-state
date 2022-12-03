@@ -1,12 +1,9 @@
 /** ボタンコンポネント */
-import { PageTransitonButton } from "../components/Button/PageTransitonButton";
-
-export const Profile = () => {
+export const ComponentB = () => {
   return (
-    <div>
-      プロフィールページです。
-      <PageTransitonButton urlParam="index" />
-      <PageTransitonButton urlParam="login" />
+    <div style={{ marginTop: '100px' }}>
+      <h2>ComponentB</h2>
+      <input type="text" />
     </div>
   );
 

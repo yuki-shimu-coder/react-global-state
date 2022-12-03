@@ -6,7 +6,7 @@ import { Top } from '../screens/Top';
 /** ログインページ */
 import { ComponentA } from '../screens/ComponentA';
 /** プロフィールページ */
-import { Profile } from '../screens/ComponentB';
+import { ComponentB } from '../screens/ComponentB';
 
 
 /** ルーター */
@@ -17,7 +17,7 @@ export const RouterComponent = () => {
       <Routes>
         <Route path="/" element={<Top />} />
         <Route path="/login" element={<ComponentA />} />
-        <Route path="/profile" element={<Profile />} />
+        <Route path="/profile" element={<ComponentB />} />
       </Routes>
     </BrowserRouter>
   );
