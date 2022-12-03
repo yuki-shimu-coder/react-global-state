@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 /** トップページ */
 import { Top } from '../screens/Top';
 /** ログインページ */
-import { Login } from '../screens/ComponentA';
+import { ComponentA } from '../screens/ComponentA';
 /** プロフィールページ */
 import { Profile } from '../screens/ComponentB';
 
@@ -16,7 +16,7 @@ export const RouterComponent = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Top />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/login" element={<ComponentA />} />
         <Route path="/profile" element={<Profile />} />
       </Routes>
     </BrowserRouter>

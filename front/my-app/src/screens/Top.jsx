@@ -1,3 +1,6 @@
+import { ComponentA } from "./ComponentA";
+
+
 /** Topコンポーネント */
 export const Top = () => {
   return (
@@ -7,6 +10,8 @@ export const Top = () => {
         <input type="text" />
       </div>
       <p>Global State : Global State</p>
+
+      <ComponentA />
     </div>
   );
 
