@@ -26,12 +26,12 @@ docker compose up -d
 ```
 docker compose exec front bash
 cd my-app
-yarn install
+npm install
 ```
 
 依存関係のインストールが完了したら、下記コマンドを実行してreactアプリを起動してください
 ```
-yarn start
+npm start
 ```
 
 http://localhost:3000 にアクセスし、「トップページです。...」と表示されていることを確認してください。
