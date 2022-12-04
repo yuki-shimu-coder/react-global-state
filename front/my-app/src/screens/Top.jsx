@@ -8,17 +8,21 @@ import { TestContext } from "../providers/TestProvider";
 /** Topコンポーネント */
 export const Top = () => {
 
-  const context = useContext(TestContext);
+  /** Global State */
+  const { globalState, setGlobalState } = useContext(TestContext);
 
-  console.log(context);
+  /** 入力時の実行関数 */
+  const onChange = (event) => {
+    setGlobalState(event.target.value)
+  }
 
   return (
     <div style={{ margin: ' 0px 20px' }}>
       <h1>Topコンポーネント</h1>
       <div>
-        <input type="text" />
+        <input type="text" onChange={onChange} />
       </div>
-      <p>Global State : Global State</p>
+      <p>Global State : <strong>{globalState}</strong></p>
 
       <div style={{ display: 'flex', width: '400px', justifyContent: 'space-between' }}>
         <ComponentA />
